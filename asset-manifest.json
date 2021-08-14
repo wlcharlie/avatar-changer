@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/avatar-changer/static/css/main.2d417e21.chunk.css",
+    "main.js": "/avatar-changer/static/js/main.ba1e8617.chunk.js",
+    "main.js.map": "/avatar-changer/static/js/main.ba1e8617.chunk.js.map",
+    "runtime-main.js": "/avatar-changer/static/js/runtime-main.0ccc7c2d.js",
+    "runtime-main.js.map": "/avatar-changer/static/js/runtime-main.0ccc7c2d.js.map",
+    "static/js/2.d732e9f0.chunk.js": "/avatar-changer/static/js/2.d732e9f0.chunk.js",
+    "static/js/2.d732e9f0.chunk.js.map": "/avatar-changer/static/js/2.d732e9f0.chunk.js.map",
+    "static/js/3.a7561a6d.chunk.js": "/avatar-changer/static/js/3.a7561a6d.chunk.js",
+    "static/js/3.a7561a6d.chunk.js.map": "/avatar-changer/static/js/3.a7561a6d.chunk.js.map",
+    "index.html": "/avatar-changer/index.html",
+    "static/css/main.2d417e21.chunk.css.map": "/avatar-changer/static/css/main.2d417e21.chunk.css.map",
+    "static/js/2.d732e9f0.chunk.js.LICENSE.txt": "/avatar-changer/static/js/2.d732e9f0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0ccc7c2d.js",
+    "static/js/2.d732e9f0.chunk.js",
+    "static/css/main.2d417e21.chunk.css",
+    "static/js/main.ba1e8617.chunk.js"
+  ]
+}
