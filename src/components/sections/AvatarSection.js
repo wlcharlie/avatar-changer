@@ -43,9 +43,7 @@ const AvatarSection = props => {
         if (!details[key]) continue
         data.push(details[key])
       }
-      console.log(data)
       const img = await mergeImages(data)
-      console.log(img)
       const a = document.createElement("a") //Create <a>
       a.href = img //Image Base64 Goes here
       a.download = "Image.png" //File name Here

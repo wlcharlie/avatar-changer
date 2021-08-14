@@ -21,8 +21,7 @@ function App() {
     setDownload(true)
     setTimeout(() => {
       setDownload(false)
-      console.log("K")
-    }, 3000)
+    }, 200)
   }
 
   return (
