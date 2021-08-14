@@ -4,7 +4,7 @@
 
 [LIVE DEMO](https://wlcharlie.github.io/avatar-changer/)
 
-<img src="../main/src/image.png" width="400">
+<img src="https://raw.githubusercontent.com/wlcharlie/avatar-changer/main/src/Image.png" width="400">
 
 ## 功能
 
