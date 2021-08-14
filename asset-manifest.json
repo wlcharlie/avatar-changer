@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/avatar-changer/static/css/main.2d417e21.chunk.css",
-    "main.js": "/avatar-changer/static/js/main.dfdd243b.chunk.js",
-    "main.js.map": "/avatar-changer/static/js/main.dfdd243b.chunk.js.map",
+    "main.js": "/avatar-changer/static/js/main.e506eaa1.chunk.js",
+    "main.js.map": "/avatar-changer/static/js/main.e506eaa1.chunk.js.map",
     "runtime-main.js": "/avatar-changer/static/js/runtime-main.0ccc7c2d.js",
     "runtime-main.js.map": "/avatar-changer/static/js/runtime-main.0ccc7c2d.js.map",
     "static/js/2.d732e9f0.chunk.js": "/avatar-changer/static/js/2.d732e9f0.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.0ccc7c2d.js",
     "static/js/2.d732e9f0.chunk.js",
     "static/css/main.2d417e21.chunk.css",
-    "static/js/main.dfdd243b.chunk.js"
+    "static/js/main.e506eaa1.chunk.js"
   ]
 }
