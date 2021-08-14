@@ -50,7 +50,10 @@ function App() {
           </div>
         </div>
         <div className="clicker_group">
-          <a href="#" className="fab fa-github info"></a>
+          <a
+            href="https://github.com/wlcharlie/avatar-changer"
+            className="fab fa-github info"
+          ></a>
           <a href="https://wlcharlie.github.io/" className="fas fa-at info"></a>
         </div>
       </TwoSection>
