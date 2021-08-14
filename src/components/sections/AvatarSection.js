@@ -10,30 +10,33 @@ const AvatarSection = props => {
     neck: images.neck.default,
     nose: images.nose,
     mouth: images.mouth.default,
-    hair: images.hair.default,
-    eyes: images.eyes.default,
     leg: images.leg.default,
     accessories: images.accessories.default || "",
+    hair: images.hair.default,
+    eyes: images.eyes.default,
   })
-
   useEffect(() => {
     if (!props.data) return
+
     if (props.data[0] || false) {
       const random = {}
       props.data.splice(0, 1)
       for (const e of props.data) {
+        if (e.part === "nose") {
+          random["nose"] = images.nose
+          continue
+        }
         random[e.part] = images[e.part][e.detail]
-        random["nose"] = images.nose
       }
-      return setDetails(random)
+      setDetails(random)
+    } else {
+      setDetails(prev => {
+        return {
+          ...prev,
+          [props.data.part]: images[props.data.part][props.data.detail],
+        }
+      })
     }
-
-    setDetails(prev => {
-      return {
-        ...prev,
-        [props.data.part]: images[props.data.part][props.data.detail],
-      }
-    })
   }, [props.data])
 
   useEffect(async () => {
@@ -58,12 +61,13 @@ const AvatarSection = props => {
       <img src={details.neck} alt="neck" />
       <img src={details.nose} alt="nose" />
       <img src={details.mouth} alt="mouth" />
-      <img src={details.hair} alt="hair" />
-      <img src={details.eyes} alt="eyes" />
+
       {details.leg && <img src={details.leg} alt="leg" />}
       {details.accessories && (
         <img src={details.accessories} alt="accessories" />
       )}
+      <img src={details.hair} alt="hair" />
+      <img src={details.eyes} alt="eyes" />
     </div>
   )
 }

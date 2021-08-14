@@ -6,20 +6,6 @@ import Title from "../UI/Title"
 import Button from "../UI/Button"
 
 const accessorize = {
-  hair: ["default", "bang", "curls", "elegant", "fancy", "quiff", "short"],
-  ears: ["default", "tilt-backward", "tilt-forward"],
-  eyes: ["default", "angry", "naughty", "panda", "smart", "star"],
-  mouth: ["default", "astonished", "eating", "laugh", "tongue"],
-  neck: ["default", "bend-backward", "bend-forward", "thick"],
-  leg: [
-    "default",
-    "bubble-tea",
-    "cookie",
-    "game-console",
-    "tilt-backward",
-    "tilt-forward",
-  ],
-  accessories: ["default", "earings", "flower", "glasses", "headphone"],
   backgrounds: [
     "blue50",
     "blue60",
@@ -40,6 +26,21 @@ const accessorize = {
     "yellow60",
     "yellow70",
   ],
+  ears: ["default", "tilt-backward", "tilt-forward"],
+  neck: ["default", "bend-backward", "bend-forward", "thick"],
+  hair: ["default", "bang", "curls", "elegant", "fancy", "quiff", "short"],
+  nose: ["default"],
+  mouth: ["default", "astonished", "eating", "laugh", "tongue"],
+  eyes: ["default", "angry", "naughty", "panda", "smart", "star"],
+  leg: [
+    "default",
+    "bubble-tea",
+    "cookie",
+    "game-console",
+    "tilt-backward",
+    "tilt-forward",
+  ],
+  accessories: ["default", "earings", "flower", "glasses", "headphone"],
 }
 
 const defaultData = [
@@ -57,11 +58,14 @@ const upperCase = str => {
 }
 
 const PartButtons = ({ click }) => {
-  return Object.keys(accessorize).map(e => (
-    <Button key={e} part={e} stayClick={click}>
-      {upperCase(e)}
-    </Button>
-  ))
+  return Object.keys(accessorize).map(
+    e =>
+      e !== "nose" && (
+        <Button key={e} part={e} stayClick={click}>
+          {upperCase(e)}
+        </Button>
+      )
+  )
 }
 
 const DetailButtons = ({ data, click }) => {
@@ -70,16 +74,19 @@ const DetailButtons = ({ data, click }) => {
       <Button key={e} part={data} style={e} bg={images.backgrounds[e]} />
     ))
   }
-  return accessorize[data].map(e => (
-    <Button
-      key={e}
-      part={data}
-      style={e}
-      click={click.filter(k => k.part === data)}
-    >
-      {upperCase(e)}
-    </Button>
-  ))
+  return accessorize[data].map(
+    e =>
+      data !== "nose" && (
+        <Button
+          key={e}
+          part={data}
+          style={e}
+          click={click.filter(k => k.part === data)}
+        >
+          {upperCase(e)}
+        </Button>
+      )
+  )
 }
 
 const setDetail = (state, action) => {
@@ -108,6 +115,7 @@ const SelectorSection = props => {
       part: e.target.dataset.part,
       detail: e.target.dataset.style,
     }
+    props.catchDataUP(data)
     setClickData(prev => {
       prev.splice(
         prev.findIndex(e => e.part === data.part),
@@ -116,7 +124,6 @@ const SelectorSection = props => {
       prev.push(data)
       return prev
     })
-    props.catchDataUP(data)
   }
 
   // for random

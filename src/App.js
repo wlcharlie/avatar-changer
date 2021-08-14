@@ -8,14 +8,14 @@ import Clicker from "./components/UI/Clicker"
 
 function App() {
   const [detail, setDetail] = useState(null)
-  const detailData = useCallback(data => {
+  const detailData = data => {
     setDetail(data)
     setRandom(false)
-  }, [])
+  }
   const [random, setRandom] = useState(false)
-  const randomEvent = useCallback(e => {
+  const randomEvent = e => {
     setRandom(true)
-  }, [])
+  }
   const [download, setDownload] = useState(false)
   const downloadEvent = e => {
     setDownload(true)
