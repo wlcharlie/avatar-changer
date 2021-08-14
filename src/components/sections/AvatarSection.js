@@ -11,9 +11,9 @@ const AvatarSection = props => {
     nose: images.nose,
     mouth: images.mouth.default,
     leg: images.leg.default,
-    accessories: images.accessories.default || "",
     hair: images.hair.default,
     eyes: images.eyes.default,
+    accessories: images.accessories.default || "",
   })
   useEffect(() => {
     if (!props.data) return
@@ -63,11 +63,11 @@ const AvatarSection = props => {
       <img src={details.mouth} alt="mouth" />
 
       {details.leg && <img src={details.leg} alt="leg" />}
+      <img src={details.hair} alt="hair" />
+      <img src={details.eyes} alt="eyes" />
       {details.accessories && (
         <img src={details.accessories} alt="accessories" />
       )}
-      <img src={details.hair} alt="hair" />
-      <img src={details.eyes} alt="eyes" />
     </div>
   )
 }
