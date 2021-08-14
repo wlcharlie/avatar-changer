@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8rem 25vw;
+
+  & .clicker_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.function {
+      @media screen and (max-width: 768px) {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+
+        & span {
+          display: none;
+        }
+      }
+    }
+  }
+
+  & .info {
+    margin: 3rem 1rem;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+      color: salmon;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+
+    & .title {
+      display: flex;
+      margin: 2rem 0 0;
+      padding: 0 15vw;
+    }
+  }
+}

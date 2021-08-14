@@ -1,0 +1,76 @@
+export const images = {
+  accessories: {
+    earings: require("./accessories/earings.png").default,
+    flower: require("./accessories/flower.png").default,
+    glasses: require("./accessories/glasses.png").default,
+    headphone: require("./accessories/headphone.png").default,
+  },
+  backgrounds: {
+    blue50: require("./backgrounds/blue50.png").default,
+    blue60: require("./backgrounds/blue60.png").default,
+    blue70: require("./backgrounds/blue70.png").default,
+    darkblue30: require("./backgrounds/darkblue30.png").default,
+    darkblue50: require("./backgrounds/darkblue50.png").default,
+    darkblue70: require("./backgrounds/darkblue70.png").default,
+    green50: require("./backgrounds/green50.png").default,
+    green60: require("./backgrounds/green60.png").default,
+    green70: require("./backgrounds/green70.png").default,
+    grey40: require("./backgrounds/grey40.png").default,
+    grey70: require("./backgrounds/grey70.png").default,
+    grey80: require("./backgrounds/grey80.png").default,
+    red50: require("./backgrounds/red50.png").default,
+    red60: require("./backgrounds/red60.png").default,
+    red70: require("./backgrounds/red70.png").default,
+    yellow50: require("./backgrounds/yellow50.png").default,
+    yellow60: require("./backgrounds/yellow60.png").default,
+    yellow70: require("./backgrounds/yellow70.png").default,
+  },
+  ears: {
+    default: require("./ears/default.png").default,
+    "tilt-backward": require("./ears/tilt-backward.png").default,
+    "tilt-forward": require("./ears/tilt-forward.png").default,
+  },
+  eyes: {
+    default: require("./eyes/default.png").default,
+    angry: require("./eyes/angry.png").default,
+    naughty: require("./eyes/naughty.png").default,
+    panda: require("./eyes/panda.png").default,
+    smart: require("./eyes/smart.png").default,
+    star: require("./eyes/star.png").default,
+  },
+
+  hair: {
+    default: require("./hair/default.png").default,
+    bang: require("./hair/bang.png").default,
+    curls: require("./hair/curls.png").default,
+    elegant: require("./hair/elegant.png").default,
+    fancy: require("./hair/fancy.png").default,
+    quiff: require("./hair/quiff.png").default,
+    short: require("./hair/short.png").default,
+  },
+  leg: {
+    default: require("./leg/default.png").default,
+    "tilt-backward": require("./leg/tilt-backward.png").default,
+    "tilt-forward": require("./leg/tilt-forward.png").default,
+    "bubble-tea": require("./leg/bubble-tea.png").default,
+    cookie: require("./leg/cookie.png").default,
+    "game-console": require("./leg/game-console.png").default,
+  },
+
+  mouth: {
+    default: require("./mouth/default.png").default,
+    astonished: require("./mouth/astonished.png").default,
+    eating: require("./mouth/eating.png").default,
+    laugh: require("./mouth/laugh.png").default,
+    tongue: require("./mouth/tongue.png").default,
+  },
+
+  neck: {
+    default: require("./neck/default.png").default,
+    "bend-backward": require("./neck/bend-backward.png").default,
+    "bend-forward": require("./neck/bend-forward.png").default,
+    thick: require("./neck/thick.png").default,
+  },
+
+  nose: require("./nose.png").default,
+}

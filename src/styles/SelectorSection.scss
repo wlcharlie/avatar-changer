@@ -1,0 +1,12 @@
+.button_group {
+  margin-bottom: 2rem;
+
+  &.style {
+    height: 42%;
+    overflow: auto;
+
+    @media screen and (max-width: 768px) {
+      overflow: initial;
+    }
+  }
+}
